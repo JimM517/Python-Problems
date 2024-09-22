@@ -7,9 +7,9 @@ class Solution:
         
         s_map, t_map = {}, {}
         
-        for i,j in len(s) and len(t):
-            s_map[i] = 1 + s_map.get(s[i], 0)
-            t_map[j] = 1 + t_map.get(t[j], 0)
+        for i in range(len(s)):
+            s_map[s[i]] = 1 + s_map.get(s[i], 0)
+            t_map[t[i]] = 1 + t_map.get(t[i], 0)
             
         
         for char in s_map:
@@ -20,8 +20,8 @@ class Solution:
 
 
 
-s = "rat"
-t = "car"
+s = "anagram"
+t = "nagaram"
 
 answer = Solution()
 
