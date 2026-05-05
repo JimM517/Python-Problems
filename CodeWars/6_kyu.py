@@ -25,3 +25,16 @@ def unique_in_order(sequence):
             prev = char
     
     return result
+
+
+
+
+
+# split strings
+def split_solution(s):
+    if len(s) % 2 != 0:
+        s += "_"
+
+    return [s[i:i+2] for i in range(0, len(s), 2)]
+
+    
