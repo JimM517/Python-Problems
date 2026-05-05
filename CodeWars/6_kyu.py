@@ -8,3 +8,20 @@ def solution(number):
         if num % 3 == 0 or num % 5 == 0:
             total += num
     return total
+
+
+
+
+
+
+# unique in order
+def unique_in_order(sequence):
+    result = []
+    prev = None
+
+    for char in sequence:
+        if char != prev:
+            result.append(char)
+            prev = char
+    
+    return result
