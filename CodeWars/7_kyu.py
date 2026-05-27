@@ -9,3 +9,26 @@ def is_isogram(string):
     
     
     return True
+
+
+
+# factorial sums
+def sum_factorial(lst):
+    result = 0
+
+    for x in lst:
+        result += factorial(x)
+    
+    return result
+
+
+
+def factorial(num):
+    result = 1
+
+    for i in range(1, num + 1):
+        result *= i
+
+    return result
+
+
