@@ -32,3 +32,11 @@ def factorial(num):
     return result
 
 
+
+def ordered_count(inp):
+    char_map = {}
+    for char in inp:
+        char_map[char] = char_map.get(char, 0) + 1
+
+    return list(char_map.items())
+
