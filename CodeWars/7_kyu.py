@@ -40,3 +40,8 @@ def ordered_count(inp):
 
     return list(char_map.items())
 
+
+
+# descending order
+def descending_order(num):
+    return int(''.join(sorted(str(num), reverse=True)))
