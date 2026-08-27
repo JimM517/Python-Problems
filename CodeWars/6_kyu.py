@@ -41,6 +41,13 @@ def split_solution(s):
 
 
 
+# two sum
+def two_sum(numbers, target):
+    num_map = {}
+    for i, num in enumerate(numbers):
+        comp = target - num
+        if comp in num_map:
+            return (num_map[comp], i)
+        num_map[num] = i
 
-
-    
+    return (-1, -1)
